@@ -1,14 +1,14 @@
 # The Lox Interpreter
 
-Welcome to my Lox interpreter project! This repository contains the **initial skeleton** of a Lox interpreter written in Java, inspired by the book **[*Crafting Interpreters*](https://craftinginterpreters.com/)** by Robert Nystrom.
+Welcome to my Lox interpreter project! This repository contains the code for the Lox interpreter written in Java, inspired by the book **[*Crafting Interpreters*](https://craftinginterpreters.com/)** by Robert Nystrom.
 
 ---
 
 ##  Purpose
 
-I am currently reading *Crafting Interpreters* to learn **how programming languages, interpreters, and compilers are made**. This project is a hands-on exploration of the concepts presented in the book.
+I am currently reading *Crafting Interpreters* to learn **how programming languages, interpreters, and compilers are made**. This project exists to learn the concepts presented in the book.
 
-The goal is to **build a working interpreter from scratch** while experimenting with ideas and implementing my own variations on the language syntax and semantics.
+The goal is to **build a working interpreter from scratch** while experimenting with new ideas and implementing my own variations on the language syntax and semantics.
 
 ---
 
