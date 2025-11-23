@@ -69,10 +69,10 @@ public class Lox {
     }
 
     /**
-     * Core execution method.
+     * Runs the lexer.
      * <p>
      * Takes source code as a string, sends it to the lexer,
-     * and begins the interpreting the code.
+     * and begins interpreting the code.
      *
      * @param sourceCode Lox source code to be run.
      * @throws IOException If an error occurs in later stages (unused for now).
