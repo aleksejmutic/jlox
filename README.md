@@ -1,28 +1,65 @@
-# jlox
+# The Lox Interpreter
 
-![Java](https://img.shields.io/badge/Language-Java-red) ![Status](https://img.shields.io/badge/Status-Learning-blue)
-
-This repository contains my implementation of the **Lox programming language** interpreter, inspired by the book *[Crafting Interpreters](https://craftinginterpreters.com/)* by Bob Nystrom. This project is a personal learning exercise where I follow the book's guidance and also experiment with my own modifications.
+Welcome to my Lox interpreter project! This repository contains the **initial skeleton** of a Lox interpreter written in Java, inspired by the book **[*Crafting Interpreters*](https://craftinginterpreters.com/)** by Robert Nystrom.
 
 ---
 
-## Project Overview
+##  Purpose
 
-- **Goal:** Implement the Lox interpreter in Java while practicing programming language concepts.  
-- **Language:** Java  
-- **Structure:** 
-  - `Bootstrap.java` — Entry point for the interpreter.  
-  - `Lexer.java` — Tokenizes input source code.  
-  - `Token.java` — Represents tokens.  
-  - `Lox.java` — Core interpreter logic (currently in progress).  
+I am currently reading *Crafting Interpreters* to learn **how programming languages, interpreters, and compilers are made**. This project is a hands-on exploration of the concepts presented in the book.
+
+The goal is to **build a working interpreter from scratch** while experimenting with ideas and implementing my own variations on the language syntax and semantics.
 
 ---
 
-## Lox Syntax Overview
+## 🛠 Features (Planned)
 
-Lox is a small, dynamically typed language. Some core features:
+- Lexical analysis (tokenizer / lexer)
+- Parsing source code into an **AST (Abstract Syntax Tree)**
+- Interpreter to execute Lox programs
+- Optional syntax changes
+- REPL mode for interactive programming
 
-### Variables
-```lox
-var x = 10;
-var y = "hello";
+---
+
+##  Getting Started
+
+To run the skeleton project:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/username/jlox.git
+   cd jlox
+   ```
+
+2. **Compile the project**:
+   ```bash
+   javac -d out src/*.java
+   ```
+
+3. **Run the interpreter**:
+   ```bash
+   java -cp out Bootstrap
+   ```
+   - Pass a script file as an argument to run a file.
+   - Run without arguments to enter REPL mode.
+
+---
+
+##  Notes
+
+- This project is a **learning exercise** based on *Crafting Interpreters*.
+- I'm experimenting with Java and interpreter design, so things may evolve as I continue reading and implementing.
+  
+---
+
+##  References
+
+- [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom
+- **Lox language**: the language defined in the book for learning interpreter construction
+
+---
+
+This project is actively evolving as I read the book and implement more features. Expect updates to the lexer, parser, and interpreter as I progress.
+
+Made with 💻 and ☕ by Alexei
