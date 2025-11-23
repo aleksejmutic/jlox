@@ -60,6 +60,4 @@ To run the skeleton project:
 
 ---
 
-This project is actively evolving as I read the book and implement more features. Expect updates to the lexer, parser, and interpreter as I progress.
-
-Made with 💻 and ☕ by Alexei
+This project is actively evolving as I read the book and implement more features. Expecting updates to the lexer, parser, and interpreter as I progress.
