@@ -1,4 +1,4 @@
-# The Lox Interpreter
+# The Lox Interpreter made in Java
 
 Welcome to my test Lox interpreter project! This repository contains the code for the Lox interpreter written in Java, inspired by the book **[Crafting Interpreters](https://craftinginterpreters.com/)** by Robert Nystrom.
 
