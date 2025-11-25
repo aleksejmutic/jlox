@@ -41,12 +41,10 @@ To run the skeleton project:
 ##  Notes
 
 - This project is a **learning exercise** based on *Crafting Interpreters*.
-- I'm experimenting with Java and interpreter design, so things may evolve as I continue reading and implementing.
+- I'm experimenting with Java and interpreter design, so things may change as I continue reading and implementing.
   
 ##  References
 
 - [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom
 - **jlox.Lox language**: the language defined in the book for learning interpreters
 
-
-This project is actively evolving as I read the book and implement more features. Expecting updates to the lexer, parser, and interpreter as I progress.
