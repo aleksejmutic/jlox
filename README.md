@@ -46,7 +46,7 @@ To run the skeleton project:
 ##  References
 
 - [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom
-- **jlox.Lox language**: the language defined in the book for learning interpreter construction
+- **jlox.Lox language**: the language defined in the book for learning interpreters
 
 
 This project is actively evolving as I read the book and implement more features. Expecting updates to the lexer, parser, and interpreter as I progress.
