@@ -1,10 +1,12 @@
+package jlox;
+
 import java.io.IOException;
 
 /**
- * Entry point for the Lox interpreter.
+ * Entry point for the jlox.Lox interpreter.
  * <p>
  * This class only contains the {@code main} method, which delegates
- * execution to the Lox interpreter. Keeping this class small ensures
+ * execution to the jlox.Lox interpreter. Keeping this class small ensures
  * that the interpreter logic remains isolated inside {@link Lox}.
  */
 public class Bootstrap {

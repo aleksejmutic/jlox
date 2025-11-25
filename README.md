@@ -1,6 +1,6 @@
 # The jlox Interpreter
 
-Welcome to my test Lox interpreter project! This repository contains the code for the Lox interpreter written in Java, inspired by the book **[Crafting Interpreters](https://craftinginterpreters.com/)** by Robert Nystrom.
+Welcome to my test jlox.Lox interpreter project! This repository contains the code for the jlox.Lox interpreter written in Java, inspired by the book **[Crafting Interpreters](https://craftinginterpreters.com/)** by Robert Nystrom.
 
 ##  Purpose
 
@@ -12,7 +12,7 @@ The goal is to **build a working interpreter from scratch** while experimenting 
 
 - Lexical analysis (tokenizer / lexer)
 - Parsing source code into an **AST (Abstract Syntax Tree)**
-- Interpreter to execute Lox programs
+- Interpreter to execute jlox.Lox programs
 - Optional syntax changes
 - REPL mode for interactive programming
 
@@ -33,7 +33,7 @@ To run the skeleton project:
 
 3. **Run the interpreter**:
    ```bash
-   java -cp out Bootstrap
+   java -cp out jlox.Bootstrap
    ```
    - Pass a script file as an argument to run a file.
    - Run without arguments to enter REPL mode.
@@ -46,7 +46,7 @@ To run the skeleton project:
 ##  References
 
 - [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom
-- **Lox language**: the language defined in the book for learning interpreter construction
+- **jlox.Lox language**: the language defined in the book for learning interpreter construction
 
 
 This project is actively evolving as I read the book and implement more features. Expecting updates to the lexer, parser, and interpreter as I progress.

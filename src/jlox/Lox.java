@@ -1,3 +1,5 @@
+package jlox;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,13 +8,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * The Lox interpreter.
+ * The jlox.Lox interpreter.
  * <p>
  * This class decides whether it should run a script from a file
  * or launch the interactive prompt (REPL). It also provides utility methods
  * for running code from various sources.
  */
 public class Lox {
+
+    static boolean hadError = false;
+
     /**
      * Entry point for starting the interpreter.
      * <p>
@@ -38,7 +43,7 @@ public class Lox {
     }
 
     /**
-     * Executes Lox code loaded from a file.
+     * Executes jlox.Lox code loaded from a file.
      *
      * @param filePath Path to the script file.
      * @throws IOException If reading the file fails.
@@ -46,6 +51,8 @@ public class Lox {
     private static void runFile(String filePath) throws IOException {
         byte[] bytes = Files.readAllBytes(Paths.get(filePath));
         run(new String(bytes, Charset.defaultCharset()));
+
+        if(hadError) System.exit(65);
     }
 
     /**
@@ -65,6 +72,7 @@ public class Lox {
             String line = reader.readLine();
             if (line == null) break;
             run(line);
+            hadError = false;
         }
     }
 
@@ -74,11 +82,31 @@ public class Lox {
      * Takes source code as a string, sends it to the lexer,
      * and begins interpreting the code.
      *
-     * @param sourceCode Lox source code to be run.
+     * @param sourceCode jlox.Lox source code to be run.
      * @throws IOException If an error occurs in later stages (unused for now).
      */
     private static void run(String sourceCode) throws IOException {
         Lexer lexer = new Lexer(sourceCode);
         lexer.scanTokens();
+    }
+
+    /**
+     * Called when an error happens.
+     * <p>
+     * When an error happens, it gets scanned, and printed out to the user.
+     */
+    static void error(int line, String message){
+        report(line, "", message);
+    }
+
+    /**
+     * Reports an error.
+     * <p>
+     * When an error happens, the method is called inside of error(),
+     * where it prints out an error message.
+     */
+    private static void report(int line, String where, String message){
+        System.err.println("[line" + line + "] Error" + where + ": " + message);
+        hadError = true;
     }
 }
